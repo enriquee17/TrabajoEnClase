@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE coches [
+<!ELEMENT coches (#PCDATA)>
+<!ELEMENT marca EMPTY>
+
+
+
+>
+<!--  <coches>
+	<marca modelo=""  año=""  motor="" color="">volvo</marca>
+	<marca modelo=""  año=""  motor="" color="">peugeot</marca>
+	<marca modelo=""  año=""  motor="" color="">renault</marca>
+	<marca modelo=""  año=""  motor="" color="">citoren</marca>
+	<marca modelo=""  año=""  motor="" color="">volswagen</marca>
+	
+</coches> -->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE placasbaseejercicio SYSTEM "placabase.dtd"> 
+<placasbase>
+	<placaAsus>
+			<microprocesador>Radeon 7894653215</microprocesador>
+			<memoria>32GB</memoria>
+			<modelo>AMD 2656431K</modelo>
+			<fabricante><Asus/></fabricante>
+	</placaAsus>
+				
+	<placaIntel>
+			<microprocesador>micro placa intel</microprocesador>
+			<memoria>64GB</memoria>
+			<modelo> 26532431K</modelo>
+			<fabricante><Intel/></fabricante>
+	</placaIntel>		
+	</placasbase>
+

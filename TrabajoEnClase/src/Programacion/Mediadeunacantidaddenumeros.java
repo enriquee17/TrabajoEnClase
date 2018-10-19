@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 
 public class Mediadeunacantidaddenumeros {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { 
 	
 		
 		int cantidadnumeros= 0;

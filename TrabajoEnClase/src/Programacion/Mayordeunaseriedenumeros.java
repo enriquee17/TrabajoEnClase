@@ -12,7 +12,7 @@ public class Mayordeunaseriedenumeros {
 		for (int i = 0; numero != 0; i++) {
 			if (i == 0) { // Primera iteraci�n
 				mayor = Integer.parseInt(JOptionPane.showInputDialog(mensaje));
-				numero = mayor;
+				numero = mayor; 
 			}
 			else { // Resto de iteraciones
 				numero = Integer.parseInt(JOptionPane.showInputDialog(mensaje));

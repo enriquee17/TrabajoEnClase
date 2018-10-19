@@ -2,7 +2,7 @@ package Programacion;
 
 import javax.swing.JOptionPane;
 
-public class Ejercicio3bloque3 {
+public class Ejercicio3bloque3 { 
 
 	public static void main(String[] args) {
 		// TODO Apéndice de método generado automáticamente

@@ -1,6 +1,6 @@
 package Programacion;
 
-import javax.swing.JOptionPane;
+import javax.swing.JOptionPane; 
 
 public class Ejercicio4bloque4 {
 	public static void main(String[] args) {

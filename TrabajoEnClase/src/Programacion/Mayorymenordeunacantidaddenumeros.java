@@ -12,7 +12,7 @@ public class Mayorymenordeunacantidaddenumeros {
 			num=Integer.parseInt(JOptionPane.showInputDialog("Introduce numero (0 para terminar )"));
 			
 			if (i == 0) {
-				mayor=num;
+				mayor=num; 
 				menor=num;
 			}
 			

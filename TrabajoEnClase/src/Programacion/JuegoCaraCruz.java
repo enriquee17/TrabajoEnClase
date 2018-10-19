@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 
 public class JuegoCaraCruz {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { 
 		int cara=0, cruz=1, usuario=0, ordenador=0;
 		
 		

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ModelosYMarcas SYSTEM "ModelosYMarcas.dtd">
+<ModelosYMarcas>
+	<Coches>
+		<TipoDeCoche>
+			<Deportivo>
+				<Marca>Ferrari</Marca>
+				<Modelo color="Rojo" Puertas="4">E2 &interior;</Modelo>
+				<Potencia>400caballos</Potencia>
+				<Año fecha="2002"/>
+			</Deportivo>
+			<Berlina></Berlina>
+			<TodoTerreno>
+				<Marca>LangeRover</Marca>
+				<Modelo color="Negro">45</Modelo>
+				<Potencia>150caballos</Potencia>
+				<Año fecha="2000" />
+			</TodoTerreno>
+			<TodoTerreno>
+				<Marca>LangeRover</Marca>
+				<Modelo color="Blanco"/>
+				<Potencia>150caballos</Potencia>
+				<Año></Año>
+			</TodoTerreno>
+		</TipoDeCoche>
+		<Colores colores="Rojo Negro Blanco"></Colores>
+		<Color color="Blanco"/>
+		</Coches>
+</ModelosYMarcas>

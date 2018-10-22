@@ -1,4 +1,4 @@
-package Programacion.Arrays;
+package Programacion.Arrays.Bloque2;
 
 public class Bloque2Ej1 {
 

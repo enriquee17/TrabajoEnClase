@@ -1,0 +1,22 @@
+<!ELEMENT ModelosYMarcas (Coches)>
+<!ELEMENT Coches (TipoDeCoche, Colores, Color)>
+<!ELEMENT Colores EMPTY>
+<!ELEMENT Color EMPTY>
+<!ELEMENT TipoDeCoche (Deportivo+, Berlina*, TodoTerreno*)>
+<!ELEMENT Deportivo (Marca, Modelo, Potencia?, Año)>
+<!ELEMENT Berlina EMPTY>
+<!ELEMENT TodoTerreno (Marca, Modelo, Potencia?, Año)>
+<!ELEMENT Marca (#PCDATA)>
+<!ELEMENT Modelo (#PCDATA)>
+<!ELEMENT Potencia (#PCDATA)>
+<!ELEMENT Año EMPTY>
+<!ATTLIST Año fecha (2000 | 2001 | 2002) #IMPLIED>
+<!ATTLIST Modelo color ID #REQUIRED>
+<!ATTLIST Modelo Puertas CDATA #FIXED "4">
+<!ENTITY interior "Este coche tiene un interior muy lujoso">
+<!ATTLIST Color color IDREF #REQUIRED>
+<!ATTLIST Colores colores IDREFS #REQUIRED>
+
+
+
+

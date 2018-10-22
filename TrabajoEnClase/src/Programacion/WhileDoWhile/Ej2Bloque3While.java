@@ -1,4 +1,4 @@
-package Programacion;
+package Programacion.WhileDoWhile;
 
 import javax.swing.JOptionPane;
 

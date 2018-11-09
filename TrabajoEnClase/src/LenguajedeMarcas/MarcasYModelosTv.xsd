@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="ModelosYMarcasTv" type="tipoTv"/>
+	
+	<xs:complexType name="tipoTv">
+		<xs:sequence>
+			<xs:element name="Samsung" type="tipoTv"/>
+  			<xs:element name="LG" type="tipoTv" maxOccurs="unbounded"/>
+  			<xs:element name="TD-Systems" type="tipoTv"/>
+  			<xs:element name="Sony" type="tipoTv" maxOccurs="unbounded"/>
+  			<xs:element name="Dell" type="tipoTv" maxOccurs="unbounded"/>
+  		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="TipoLG">
+		<xs:all>
+			<xs:element name="extension" type="xs:string"/>
+  			<xs:element name="arboleda" type="xs:string"/>		
+		</xs:all>
+	</xs:complexType>
+	
+	
+	 <xs:complexType name="TipoLGDerivado">
+    <xs:complexContent>
+      <xs:extension base="TipoLG">
+        <xs:attribute name="localizacion" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  
+   <xs:complexType name="TipoSamsung">
+  	<xs:attribute name="dimension" type="dimensiones"/>
+  </xs:complexType>
+  
+	
+</xs:schema>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TrofeosFutbol SYSTEM "TrofeosFutbol.dtd">
-<TrofeosFutbol>
-	<TrofeoSantiagoBernabeu GanadorBernabeu="RealMadrid"></TrofeoSantiagoBernabeu>
-	<Champions GanadorChampions="ATMadrid"></Champions>
-	<Liga GanadorLiga="FCBarcelona"></Liga>
-	<CopaDelRey GanadorCopa="Sevilla"></CopaDelRey> 
-	<Ganadores Campeones="RealMadrid ATMadrid FCBarcelona Sevilla"/>
-</TrofeosFutbol>

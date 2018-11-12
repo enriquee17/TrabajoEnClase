@@ -74,7 +74,7 @@ public class principal {
 			}
 			
 			matricula.setCodigo(Integer.parseInt(JOptionPane.showInputDialog("Introduzca un codigo de matricula")));
-			matricula.setFecha(String.parseInt(JOptionPane.showInputDialog("Introduzca una fecha de matricula")));
+			matricula.setFecha(JOptionPane.showInputDialog("Introduzca una fecha de matricula"));
 				
 		}
 

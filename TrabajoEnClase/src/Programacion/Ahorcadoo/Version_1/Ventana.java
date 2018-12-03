@@ -10,6 +10,8 @@ import java.awt.event.WindowEvent;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+
+
 // La clase extiende de Canvas, se trata de un lienzo sobre el cual podemos pintar
 // libremente.
 public class Ventana extends Canvas { 
@@ -69,27 +71,27 @@ public class Ventana extends Canvas {
 		g.setColor(Color.gray);
 		g.fillRect(450, 20, 20, 80);
 		// Pintando cuerpo
-		g.setColor(Color.orange);
+		g.setColor(Color.green);
 		g.fillRect(420, 175, 80, 150);
 		
 		// Pintando brazo izquierdo
-		g.setColor(Color.orange);
+		g.setColor(Color.green);
 		g.fillRect(382, 175, 30, 80);
 		
 		// Pintando brazo derecho
-		g.setColor(Color.orange);
+		g.setColor(Color.green);
 		g.fillRect(508, 175, 30, 80);
 		
 		// Pintando pierna izquierda
-		g.setColor(Color.orange);
+		g.setColor(Color.green);
 		g.fillRect(425, 330, 30, 80);
 		// Pintando pierna derecha
-		g.setColor(Color.orange);
+		g.setColor(Color.green);
 		g.fillRect(465, 330, 30, 80);
 		// Pintando cabeza
-		g.setColor(Color.orange);
+		g.setColor(Color.green);
 		g.fillOval(420, 99, 77, 77);
-		
+		g.drawImage(Cache_Imagen.getCache().getImagenTablero(), 0, 0, this);
 	
 	}
 

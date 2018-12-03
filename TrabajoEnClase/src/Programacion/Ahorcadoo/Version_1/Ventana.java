@@ -55,21 +55,40 @@ public class Ventana extends Canvas {
 		// Establecimiento del color del pincel
 		g.setColor(Color.decode("#74ce25"));
 
-		// Pintando una l�nea
+		// Pintando base
 		
+		g.setColor(Color.gray);
+		g.fillRect(50, 380, 171, 40);
+		//palo base
+		g.setColor(Color.gray);
+		g.fillRect(120, 20, 30, 360);
+		//palobase2
+		g.setColor(Color.gray);
+		g.fillRect(120, 20, 340, 30);
+		//palobaseCabeza
+		g.setColor(Color.gray);
+		g.fillRect(450, 20, 20, 80);
+		// Pintando cuerpo
+		g.setColor(Color.orange);
+		g.fillRect(420, 175, 80, 150);
 		
-		// Pintando un cuadrado vac�o
-		g.setColor(Color.yellow);
-		g.fillRect(286, 230, 180, 9);
+		// Pintando brazo izquierdo
+		g.setColor(Color.orange);
+		g.fillRect(382, 175, 30, 80);
 		
-		// Pintando un cuadrado
+		// Pintando brazo derecho
+		g.setColor(Color.orange);
+		g.fillRect(508, 175, 30, 80);
 		
-		// Pintando un �valo
-		
-		
-		// Pintando un �valo relleno
-		g.setColor(Color.yellow);
-		g.fillOval(287, 113, 77, 77);
+		// Pintando pierna izquierda
+		g.setColor(Color.orange);
+		g.fillRect(425, 330, 30, 80);
+		// Pintando pierna derecha
+		g.setColor(Color.orange);
+		g.fillRect(465, 330, 30, 80);
+		// Pintando cabeza
+		g.setColor(Color.orange);
+		g.fillOval(420, 99, 77, 77);
 		
 	
 	}

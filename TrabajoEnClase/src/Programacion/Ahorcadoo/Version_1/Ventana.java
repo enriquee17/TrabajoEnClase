@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 
 // La clase extiende de Canvas, se trata de un lienzo sobre el cual podemos pintar
 // libremente.
-public class Ventana extends Canvas {
+public class Ventana extends Canvas { 
 
 	// Declaraci�n de variables que nos permitir�n introducir el ancho y el alto
 	// de la ventana

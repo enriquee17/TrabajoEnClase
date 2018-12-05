@@ -11,7 +11,7 @@ public class Cache_Imagen {
 		
 		// Variables con im�genes almacenadas
 		private BufferedImage imagenTablero = null;
-		private BufferedImage iconoLaOca = null;
+		
 		
 		
 		/**
@@ -46,7 +46,7 @@ public class Cache_Imagen {
 		public BufferedImage getImagen(String nombre) {
 			URL url=null;
 			try {
-				url = getClass().getResource("/tutorialJava/capitulo4_OO/ejercicios/ejercicioExtra02_La_Oca/recursos/" + nombre);
+				url = getClass().getResource("/Programacion/Ahorcadoo/Version_1/" + nombre);
 				return ImageIO.read(url);
 			} catch (Exception e) {
 				System.out.println("No se pudo cargar la imagen " + nombre +" de "+url);
@@ -60,9 +60,9 @@ public class Cache_Imagen {
 		/**
 		 * @return the imagenTablero
 		 */
-		public BufferedImage getImagenTablero() {
+		public BufferedImage getImagenAhorcado() {
 			if (imagenTablero == null) {
-				imagenTablero = getCache().getImagen("tableroOca.png");
+				imagenTablero = getCache().getImagen("Imagenn.jpg");
 			}
 			
 			return imagenTablero;

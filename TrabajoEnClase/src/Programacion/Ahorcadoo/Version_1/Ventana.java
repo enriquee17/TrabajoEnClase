@@ -19,7 +19,7 @@ public class Ventana extends Canvas {
 	// Declaraci�n de variables que nos permitir�n introducir el ancho y el alto
 	// de la ventana
 	public static final int WIDTH = 640;
-	public static final int HEIGHT = 480;
+	public static final int HEIGHT = 460;
 
 	
 	public Ventana () {
@@ -56,42 +56,46 @@ public class Ventana extends Canvas {
 	public void paint(Graphics g) {
 		// Establecimiento del color del pincel
 		g.setColor(Color.decode("#74ce25"));
-
+		g.drawImage(Cache_Imagen.getCache().getImagenAhorcado(), 0, 0, this);
+		
 		// Pintando base
 		
-		g.setColor(Color.gray);
+		g.setColor(Color.black);
 		g.fillRect(50, 380, 171, 40);
 		//palo base
-		g.setColor(Color.gray);
+		g.setColor(Color.black);
 		g.fillRect(120, 20, 30, 360);
 		//palobase2
-		g.setColor(Color.gray);
+		g.setColor(Color.black);
 		g.fillRect(120, 20, 340, 30);
 		//palobaseCabeza
-		g.setColor(Color.gray);
-		g.fillRect(450, 20, 20, 80);
+		g.setColor(Color.black);
+		g.fillRect(450, 20, 10, 80);
 		// Pintando cuerpo
-		g.setColor(Color.green);
-		g.fillRect(420, 175, 80, 150);
+		g.setColor(Color.blue);
+		g.fillRect(420, 150, 70, 100);
+		//cuerpoError
+		
 		
 		// Pintando brazo izquierdo
 		g.setColor(Color.green);
-		g.fillRect(382, 175, 30, 80);
+		g.fillRect(390, 160, 25, 70);
 		
 		// Pintando brazo derecho
 		g.setColor(Color.green);
-		g.fillRect(508, 175, 30, 80);
+		g.fillRect(495, 160, 25, 70);
 		
 		// Pintando pierna izquierda
 		g.setColor(Color.green);
-		g.fillRect(425, 330, 30, 80);
+		g.fillRect(425, 260, 25, 70);
 		// Pintando pierna derecha
 		g.setColor(Color.green);
-		g.fillRect(465, 330, 30, 80);
+		g.fillRect(465, 260, 25, 70);
 		// Pintando cabeza
-		g.setColor(Color.green);
-		g.fillOval(420, 99, 77, 77);
-		g.drawImage(Cache_Imagen.getCache().getImagenTablero(), 0, 0, this);
+		g.setColor(Color.orange);
+		g.fillOval(430, 97, 50, 50);
+		
+		
 	
 	}
 

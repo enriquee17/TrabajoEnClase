@@ -1,8 +1,9 @@
-package Programacion.Ahorcadoo.Version_1;
+ package Programacion.Ahorcadoo.Version_1;
 
-import java.awt.Canvas;
+import java.awt.Canvas;  
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
@@ -10,7 +11,9 @@ import java.awt.event.WindowEvent;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-import Programacion.orientacionAObjetos.juegoOca.Jugador;
+
+
+
 
 
 
@@ -149,7 +152,26 @@ public class Ventana extends Canvas {
 			pintarArray+=Juego.getjuego().coincidencia[i]+" ";
 		}
 		g.setColor(Color.white);
-		g.drawString("Palabra: " +pintarArray, 250, 42);
+		g.drawString("Palabra: " +pintarArray, 180, 42);
+		
+		g.setColor(Color.white);
+		g.drawString("Fallos: " +Juego.getjuego().contFallos, 380, 42);
+		//Mensaje de perdedor
+		String msgPerdedor="HAS PERDIDO, la palabra secreta es: " + Juego.getjuego().palabra;
+		Font fuente=new Font("Monospaced", Font.BOLD, 20);
+		if (Juego.getjuego().contFallos==6) {
+			
+			g.setColor(Color.white);
+			g.setFont(fuente);
+			g.drawString(msgPerdedor, 50, 400);
+		}
+		//Mensaje ganador
+		String msgGanador="HAS GANADO, ENHORABUENA";
+		if (Juego.getjuego().aciertoPalabra==true || Juego.getjuego().booleanCoincidencia==true) {
+			g.setColor(Color.white);
+			g.setFont(fuente);
+			g.drawString(msgGanador, 50, 400);
+		}
 		
 		
 		

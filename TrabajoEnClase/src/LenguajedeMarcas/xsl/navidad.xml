@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="navidad.xsl"?>
+
+<navidad>
+	<almuerzo>
+		<primerPlato>Patatas Bravas</primerPlato>
+		<segundoPlato>Entrecot de Ternera</segundoPlato>
+		<postre>Helado</postre>
+		<bebida>Licor de Hierba</bebida>
+		<sobremesa>
+			<primeraCopa>JB-Cola</primeraCopa>
+			<segundaCopa>Balantines-Cola</segundaCopa>
+			<terceraCopa>Bombay-Tonica</terceraCopa>
+		</sobremesa> 
+	</almuerzo>
+</navidad>

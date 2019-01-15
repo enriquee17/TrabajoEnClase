@@ -1,13 +1,9 @@
  package Programacion.Ahorcadoo.Version_1;
 
-import java.awt.Canvas;  
+import java.awt.Canvas;   
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Graphics;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -19,17 +15,17 @@ import javax.swing.JPanel;
 
 // La clase extiende de Canvas, se trata de un lienzo sobre el cual podemos pintar
 // libremente.
-public class Ventana extends Canvas { 
+public class Ventana1 extends Canvas { 
 
 	// Declaraci�n de variables que nos permitir�n introducir el ancho y el alto
 	// de la ventana
 	public static final int WIDTH = 640;
 	public static final int HEIGHT = 460;
-	public static Ventana ventana=null;
+	public static Ventana1 ventana=null;
 	
 
 	
-	public Ventana () {
+	public Ventana1 () {
 		// La clase JFrame nos permite mostrar una ventana en pantalla
 		JFrame ventana = new JFrame("El juego de el Ahorcado");
 		// Establecemos las dimensiones que queremos que tenga
@@ -86,7 +82,7 @@ public class Ventana extends Canvas {
 		g.setColor(Color.blue);
 		g.fillRect(420, 150, 70, 100);
 		//cuerpoError
-		if (Juego.contFallos>3) {
+		if (Juego.contFallos>3  && Juego.contFallos<7) {
 			g.setColor(Color.red);
 			g.fillRect(420, 150, 70, 100);
 		}
@@ -97,7 +93,7 @@ public class Ventana extends Canvas {
 		g.setColor(Color.green);
 		g.fillRect(390, 160, 25, 70);
 		//brazoIZError
-		if (Juego.contFallos>1) {
+		if (Juego.contFallos>1  && Juego.contFallos<7) {
 			g.setColor(Color.red);
 			g.fillRect(390, 160, 25, 70);
 		}
@@ -109,7 +105,7 @@ public class Ventana extends Canvas {
 		g.setColor(Color.green);
 		g.fillRect(495, 160, 25, 70);
 		//brazoderechoerror
-		if (Juego.contFallos>2) {
+		if (Juego.contFallos>2  && Juego.contFallos<7) {
 			g.setColor(Color.red);
 			g.fillRect(495, 160, 25, 70);
 		}
@@ -120,7 +116,7 @@ public class Ventana extends Canvas {
 		g.setColor(Color.green);
 		g.fillRect(425, 260, 25, 70);
 		//pierdaIZQError
-		if (Juego.contFallos>4) {
+		if (Juego.contFallos>4  && Juego.contFallos<7) {
 			g.setColor(Color.red);
 			g.fillRect(425, 260, 25, 70);
 		}
@@ -131,7 +127,7 @@ public class Ventana extends Canvas {
 		g.setColor(Color.green);
 		g.fillRect(465, 260, 25, 70);
 		//piernaDerechaError
-		if(Juego.contFallos>5) {
+		if(Juego.contFallos>5  && Juego.contFallos<7) {
 			g.setColor(Color.red);
 			g.fillRect(465, 260, 25, 70);
 		}
@@ -142,24 +138,29 @@ public class Ventana extends Canvas {
 		g.setColor(Color.orange);
 		g.fillOval(430, 97, 50, 50);
 		//cabezaError
-		if(Juego.contFallos>0) {
+		if(Juego.contFallos>0 && Juego.contFallos<7) {
 			g.setColor(Color.red);
 			g.fillOval(430, 97, 50, 50);
 		}
 		String pintarArray="";
+		Juego.getjuego();
 		//Guiones de palabra en la pantalla
-		for (int i=0;i<Juego.getjuego().coincidencia.length;i++) {
-			pintarArray+=Juego.getjuego().coincidencia[i]+" ";
+		for (int i=0;i<Juego.coincidencia.length;i++) {
+			Juego.getjuego();
+			pintarArray+=Juego.coincidencia[i]+" ";
 		}
 		g.setColor(Color.white);
 		g.drawString("Palabra: " +pintarArray, 180, 42);
 		
 		g.setColor(Color.white);
-		g.drawString("Fallos: " +Juego.getjuego().contFallos, 380, 42);
+		Juego.getjuego();
+		g.drawString("Fallos: " +Juego.contFallos, 380, 42);
+		Juego.getjuego();
 		//Mensaje de perdedor
-		String msgPerdedor="HAS PERDIDO, la palabra secreta es: " + Juego.getjuego().palabra;
+		String msgPerdedor="HAS PERDIDO, la palabra secreta es: " + Juego.palabra;
 		Font fuente=new Font("Monospaced", Font.BOLD, 20);
-		if (Juego.getjuego().contFallos==6) {
+		Juego.getjuego();
+		if (Juego.contFallos==6) {
 			
 			g.setColor(Color.white);
 			g.setFont(fuente);
@@ -167,19 +168,25 @@ public class Ventana extends Canvas {
 		}
 		//Mensaje ganador
 		String msgGanador="HAS GANADO, ENHORABUENA";
-		if (Juego.getjuego().aciertoPalabra==true || Juego.getjuego().booleanCoincidencia==true) {
+		if (Juego.aciertoPalabra==true || Juego.booleanCoincidencia==true) {
 			g.setColor(Color.white);
 			g.setFont(fuente);
 			g.drawString(msgGanador, 50, 400);
 		}
-		
-		
-		
-		
+		String msgInmortal="INMORTAL";
+		if (Juego.contFallos>6) {
+			g.setColor(Color.white);
+			g.setFont(fuente);
+			g.drawString(msgInmortal, 60, 400);
+		}
 	}
-	public static Ventana getventana(){
+	/**
+	 * 
+	 * @return
+	 */
+	public static Ventana1 getventana(){
 		if (ventana==null) {
-			ventana=new Ventana();
+			ventana=new Ventana1();
 		}
 		return ventana;
 

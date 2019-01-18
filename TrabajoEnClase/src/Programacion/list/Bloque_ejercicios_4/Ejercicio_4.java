@@ -8,6 +8,8 @@ public class Ejercicio_4 {
 		System.out.println("Simétrica: " + matrizSimetrica(matriz));
 		System.out.println("Matriz Positiva: " + comprobarMatrizPositiva(matriz));
 		System.out.println("Matriz Diagonal: " + comprobarMatrizDiagonal(matriz));
+		System.out.println("Matriz Triangular: " + comprobarMatrizTriangular(matriz));
+		
 		
 
 	}
@@ -24,11 +26,11 @@ public class Ejercicio_4 {
 	
 		// Otra forma
 		int matriz[][] = new int[][] {
-			{1,		6, 		11, 	16, 	21},
-			{6, 	7, 		12,		17,		22},
-			{11, 	12, 	13, 	18, 	23},
-			{16, 	17, 	18, 	19, 	24},
-			{21, 	22, 	23, 	24, 	25}
+			{1,	   0, 	 0,    0, 	0},
+			{0,    1, 	 0,	   0,	0},
+			{0,    0, 	 1,    0, 	0},
+			{0,    0, 	 0,    1,   0},
+			{0,    0, 	 0,    0, 	1}
 		};
 		
 		return matriz;
@@ -58,15 +60,48 @@ public class Ejercicio_4 {
 	
 	private static boolean comprobarMatrizDiagonal (int matriz[][]) {
 		boolean diagonal = true;
+		int sumDiag =0;
 		for (int i = 0; i < matriz.length; i++) {
 			for (int j = 0; j < matriz[i].length; j++) {
-				if (matriz[0][0]==0 || matriz[1][1]==0 ||  matriz[2][2]==0 ||  matriz[3][3]==0) {
+				if(!(i==j)) {
+					sumDiag+=matriz[i][j];
+				}
+				else if (matriz[i][j]<1) {
 					diagonal = false;
 				}
 			}
 		}
 		
+		if(sumDiag!=0) {
+			diagonal = false;
+		}
+		
 		return diagonal;
+		
+	}
+	/**
+	 * 
+	 */
+	private static boolean comprobarMatrizTriangular (int matriz[][]) {
+		boolean triangular = true;
+		int sumTriang=0;
+		for (int i = 0; i < matriz.length; i++) {
+			for (int j = 0; j < matriz[i].length; j++) {
+				if (i>j) {
+					sumTriang+=matriz[i][j];
+					
+					
+				}
+				else if(i<j && matriz[i][j]<1){
+					triangular=false;
+				}
+				
+			}
+		}
+		if (sumTriang!=0) {
+			triangular=false;
+		}
+		return triangular;
 		
 	}
 	/**

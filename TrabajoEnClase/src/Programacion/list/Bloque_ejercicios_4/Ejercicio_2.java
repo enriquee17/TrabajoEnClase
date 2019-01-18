@@ -15,7 +15,7 @@ public class Ejercicio_2 {
 	private static float contSuspensos=0;
 	
 	private static int [] crearArray() {
-		int array[] = new int[200];
+		int array[] = new int[21];
 		
 		for (int i = 0; i < array.length; i++) {
 			array[i] = (int)Math.round(Math.random()*10);
@@ -23,6 +23,10 @@ public class Ejercicio_2 {
 		
 		return array;
 	}
+	/**
+	 * 
+	 * @param array
+	 */
 	private static void comprobarPorcentaje(int array[]) {
 		for (int i = 0; i < array.length; i++) {
 			if (array[i]>=5) {
@@ -33,8 +37,8 @@ public class Ejercicio_2 {
 			}
 		}
 		System.out.println();
-		System.out.println("El porcentaje de aprobados es: " +contAprobados*100/array.length);
-		System.out.println("El porcentaje de suspensos es: " +contSuspensos*100/array.length);
+		System.out.println("El porcentaje de aprobados es: " +contAprobados*100/array.length+"%");
+		System.out.println("El porcentaje de suspensos es: " +contSuspensos*100/array.length+"%");
 	}
 	/**
 	 * 

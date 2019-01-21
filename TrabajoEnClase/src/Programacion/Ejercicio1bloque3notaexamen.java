@@ -8,28 +8,28 @@ public class Ejercicio1bloque3notaexamen {
 		// TODO Auto-generated method stub
 		int num = Integer.parseInt(JOptionPane.showInputDialog("Introduce una nota: "));
 		String mensaje = "";
-		
+
 		switch (num) {
 		case 0:
 		case 1:
-			mensaje = "Muy deficiente" ;
+			mensaje = "Muy deficiente";
 			break;
 		case 2:
 		case 3:
 		case 4:
 		case 5:
-			mensaje = "Suficiente" ;
+			mensaje = "Suficiente";
 			break;
 		case 6:
-			mensaje = "Bien" ;
+			mensaje = "Bien";
 			break;
 		case 7:
 		case 8:
-			mensaje = "Notable" ;
+			mensaje = "Notable";
 			break;
 		case 9:
 		case 10:
-			mensaje = "Sobresaliente" ;
+			mensaje = "Sobresaliente";
 			break;
 		}
 		JOptionPane.showMessageDialog(null, "Su nota es " + mensaje);

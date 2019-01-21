@@ -6,15 +6,14 @@ public class Examen2017Ejercicio3 {
 		// TODO Auto-generated method stub
 		int num;
 		do {
-			num=Integer.parseInt(JOptionPane.showInputDialog("Introduce un numero: "));
+			num = Integer.parseInt(JOptionPane.showInputDialog("Introduce un numero: "));
 			for (int i = 1; i <= num; i++) {
-				if (num % i ==0) {
+				if (num % i == 0) {
 					System.out.println(i);
 				}
 			}
-		}
-		while(num != 0);
-		
+		} while (num != 0);
+
 	}
 
 }

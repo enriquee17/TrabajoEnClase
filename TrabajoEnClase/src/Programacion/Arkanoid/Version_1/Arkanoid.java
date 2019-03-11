@@ -1,9 +1,9 @@
-package Programacion.Arkanoid.Version_1;
+
 /**
- * Curso Básico de desarrollo de Juegos en Java - Invaders
+ * Curso Bï¿½sico de desarrollo de Juegos en Java - Invaders
 
  * 
- * (c) 2004 Planetalia S.L. - Todos los derechos reservados. Prohibida su reproducción
+ * (c) 2004 Planetalia S.L. - Todos los derechos reservados. Prohibida su reproducciï¿½n
  * 
  * http://www.planetalia.com
  * 

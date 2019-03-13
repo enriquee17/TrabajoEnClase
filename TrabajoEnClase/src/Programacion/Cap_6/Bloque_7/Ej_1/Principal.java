@@ -21,7 +21,7 @@ public class Principal {
 		String frase;
 		int contDigitos=0;
 		do {
-			 frase = JOptionPane.showInputDialog("Dame frase");
+			 frase = JOptionPane.showInputDialog("Dame palabra");
 			 int tamaño = frase.length();
 				char cadenaTexto[] = new char[tamaño] ;
 				

@@ -23,9 +23,9 @@ public class Ej_1 {
 	static Date fechaParseada = null;
 	public static void main(String[] args) {
 		fecha();
-		calendario();
-		individual();
-		SumaRestaFechas();
+//		calendario();
+//		individual();
+//		SumaRestaFechas();
 	}
 	
 	public static void fecha() {

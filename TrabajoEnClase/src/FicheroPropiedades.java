@@ -83,7 +83,7 @@ public class FicheroPropiedades {
 		String nombre = FicheroPropiedades.getProperty("Nombre");
 		
 		
-		System.out.println("Usuario le�do del fichero de propiedades: " + nombre);
+		System.out.println("Usuario leido del fichero de propiedades: " + nombre);
 		
 	}
 

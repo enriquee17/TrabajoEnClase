@@ -1,5 +1,5 @@
 
-public abstract class Articulo {
+public abstract  class Articulo {
 	String nombre;
 	int id;
 	int cantidad;

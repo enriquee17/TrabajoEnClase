@@ -5,7 +5,7 @@ public class SupervisorCajas implements ArticuloDevueltoListener {
 	public SupervisorCajas(String nombre) {
 		super();
 		this.nombre = nombre;
-		Principal.addArticuloDevueltoListener(this);
+		Caja.addArticuloDevueltoListener(this);
 	}
 
 	public String getNombre() {
